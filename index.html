@@ -14,16 +14,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!---Шапка-->
     <header class="header-page">
-      <div class="container">
+      <div class="header-page__container">
         <nav class="site-nav">
           <a href="./index.html" class="logo">Web<span class="logo__studio">Studio</span></a>
           <!-- Навігація -->
-          <ul class="site-nav__menu list">
+          <ul class="site-nav__menu">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
             </li>
@@ -34,7 +34,7 @@
           </ul>
         </nav>
         <!-- Контакти -->
-        <ul class="header-contacts list">
+        <ul class="header-contacts">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link"
               ><svg class="header-contacts__icon" width="25" height="15">
@@ -60,7 +60,7 @@
       <!--Герой-->
 
       <section class="hero">
-        <div class="container">
+        <div class="hero__container">
           <h1 class="hero__title">
             Эффективные решения<br />
             для вашего бизнеса
@@ -144,8 +144,8 @@
         </div>
       </section>
       <!---Секція Наша команда-->
-      <section class="team-section section">
-        <div class="team-section__container container">
+      <section class="team">
+        <div class="team__container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
@@ -323,47 +323,47 @@
           </ul>
         </div>
       </section>
-      <section class="clients-section section">
-        <div class="clients-section__container container">
-          <h2 class="clients-section__title">Постоянные клиенты</h2>
+      <section class="clients">
+        <div class="clients__container">
+          <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
-              <a href="" class="clients-list__icon-link">
+              <a href="" class="clients-list__thumb">
                 <svg class="clients-list__icon" width="41" height="46.7">
                   <use href="./images/symboldefs.svg#icon-group1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="" class="clients-list__icon-link">
+              <a href="" class="clients-list__thumb">
                 <svg class="clients-list__icon" width="40" height="52">
                   <use href="./images/symboldefs.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="" class="clients-list__icon-link">
+              <a href="" class="clients-list__thumb">
                 <svg class="clients-list__icon" width="43.46" height="41.18">
                   <use href="./images/symboldefs.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="" class="clients-list__icon-link">
+              <a href="" class="clients-list__thumb">
                 <svg class="clients-list__icon" width="110" height="90">
                   <use href="./images/symboldefs.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="" class="clients-list__icon-link">
+              <a href="" class="clients-list__thumb">
                 <svg class="clients-list__icon" width="62" height="45">
                   <use href="./images/symboldefs.svg#icon-group5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients-list__item">
-              <a href="" class="clients-list__icon-link">
+              <a href="" class="clients-list__thumb">
                 <svg class="clients-list__icon" width="110" height="90">
                   <use href="./images/symboldefs.svg#icon-group6"></use>
                 </svg>
@@ -395,29 +395,29 @@
           <h3 class="join__title">присоединяйтесь</h3>
           <ul class="join-socials">
             <li class="join-socials__item">
-              <a href="" class="join-socials__link">
-                <svg class="icon-instagramfoot" width="20" height="20">
+              <a href="" class="join-socials__thumb">
+                <svg class="join-socials__icon" width="20" height="20">
                   <use href="./images/symboldefs.svg#icon-instagramfoot"></use>
                 </svg>
               </a>
             </li>
             <li class="join-socials__item">
-              <a href="" class="join-socials__link">
-                <svg class="icon-twitterfoot" width="20" height="20">
+              <a href="" class="join-socials__thumb">
+                <svg class="join-socials__icon" width="20" height="20">
                   <use href="./images/symboldefs.svg#icon-twitterfoot"></use>
                 </svg>
               </a>
             </li>
             <li class="join-socials__item">
-              <a href="" class="join-socials__link">
-                <svg class="icon-facebookfoot" width="20" height="20">
+              <a href="" class="join-socials__thumb">
+                <svg class="join-socials__icon" width="20" height="20">
                   <use href="./images/symboldefs.svg#icon-facebookfoot"></use>
                 </svg>
               </a>
             </li>
             <li class="join-socials__item">
-              <a href="" class="join-socials__link">
-                <svg class="icon-linkedinfoot" width="20" height="20">
+              <a href="" class="join-socials__thumb">
+                <svg class="join-socials__icon" width="20" height="20">
                   <use href="./images/symboldefs.svg#icon-linkedinfoot"></use>
                 </svg>
               </a>
@@ -444,7 +444,7 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop__modal is-hidden" data-modal>
+      <div class="modal" data-modal>
         <button class="modal__button" data-modal-close>
           <svg class="modal_button-icon" width="18px" height="18px">
             <use href="./images/symboldefs.svg#icon-close-black"></use>
