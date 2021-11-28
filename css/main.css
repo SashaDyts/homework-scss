@@ -239,6 +239,7 @@ img {
 }
 
 .hero {
+  min-width: 1200px;
   max-width: 1600px;
   height: 600px;
   padding-top: 200px;
@@ -644,6 +645,9 @@ img {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 1200px;
+  max-width: 1600px;
+  min-height: 284.14px;
 }
 
 .footer-page__container {
